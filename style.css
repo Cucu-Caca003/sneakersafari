@@ -1,0 +1,640 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Color+Emoji&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Color+Emoji&family=Pacifico&family=Poetsen+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Fredoka, Arial, sans-serif;
+}
+
+body { 
+  width: 100%;
+ }
+
+header.retro {
+  /* background-color: #ff4242; */
+  background: linear-gradient(#ff8989, #ff0000);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header.retro .title {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-family: pacifico, arial;
+}
+
+header.retro .catchphrase {
+  color: #ffffff;
+  font-size: large;
+  text-align: center;
+}
+
+header.retro .catchphrase:hover {
+  color: black;
+  transition: color 0.5s ease-in-out;
+  font-size: 1.2em;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ececec;
+}
+
+.nav-padding {
+    flex-grow: 1;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding-left: 250px;
+    gap: 20px;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-btn {
+    color: rgb(60, 60, 60);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-btn i {
+    margin-right: 5px;
+}
+
+.nav-btn:hover {
+    color: #e40d0d;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    color: #030202;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+#search-input {
+    padding: 5px;
+    border: none;
+    border-radius: 30px;
+}
+
+button[type="submit"] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ff0000;
+    color: white;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #777;
+}
+
+
+/* nav ul { 
+  display: flex;
+  justify-content: center;
+  gap: 72px;
+  /* border: 1px solid #ff0000; 
+  padding: 12px 10px;
+  border-top: #d8d8d8;
+  background-color: #ececec;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul .nav-btn {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav-btn:hover {
+  color: #ff0000;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item .nav-padding .nav-list li {
+  margin-right: 20px;
+}
+
+search-form {
+  display: flex;
+  align-items: center;
+}  */
+
+.top-seller {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0%;
+}
+
+.top-seller h1 {
+  text-align: center;
+  padding-top: 30px;
+  color: #ff4747;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Poetsen One, monospace;
+}
+
+header.retro h1 {
+  font-size: 3em;
+  margin-bottom: 5px;
+}
+
+header.retro p {
+  color: #808080;
+}
+
+main {
+  padding: 72px 0;
+}
+
+.container {
+  border: 1px solid #000;
+  border-radius: 32px;
+  width: 50%;
+  justify-content: space-between;
+}
+
+main .title-name {
+  text-align: center;
+  font-size: 32px;
+  padding: 0px 72px 0px 0px;
+  margin-bottom: 32px;
+  margin-left: 64px;
+  margin-top: 20px;
+  font-family: Bungee Spice, monospace;
+}
+
+.shop-banner .shoes-photo {
+  width: 400px;
+  margin-left: 72px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.shop-banner .style {
+  font-size: 28px;
+  color: #ff0000;
+  font-family: Poetsen One, monospace;
+}
+
+.shop-banner .shoes-photo:hover {
+  transform: translateY(-10px) rotateZ(20deg);
+}
+
+.shop-banner .order-btn {
+  margin-top: 32px;
+  margin-left: 40px;
+  margin-right: 2px;
+  display: inline-block;
+  font-size: 24px;
+  background-color: hsl(0, 100%, 64%);
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.shop-banner .order-btn2 {
+  margin-top: 32px;
+  margin-left: 40px;
+  margin-right: 2px;
+  display: inline-block;
+  font-size: 24px;
+  background-color: hsl(0, 100%, 64%);
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.shop-banner .order-btn3 {
+  margin-top: 32px;
+  margin-left: 40px;
+  margin-right: 2px;
+  display: inline-block;
+  font-size: 24px;
+  background-color: hsl(0, 100%, 64%);
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.shop-banner .order-btn4 {
+  margin-top: 32px;
+  margin-left: 40px;
+  margin-right: 2px;
+  display: inline-block;
+  font-size: 24px;
+  background-color: hsl(0, 100%, 64%);
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.shop-banner .wishlist-btn {
+  margin-top: 32px;
+  margin-left: 40px;
+  margin-right: 2px;
+  display: inline-block;
+  font-size: 24px;
+  background-color: hsl(0, 100%, 64%);
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.shop-banner .wishlist-btn2 {
+  margin-top: 32px;
+  margin-left: 40px;
+  margin-right: 2px;
+  display: inline-block;
+  font-size: 24px;
+  background-color: hsl(0, 100%, 64%);
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.shop-banner .wishlist-btn3 {
+  margin-top: 32px;
+  margin-left: 40px;
+  margin-right: 2px;
+  display: inline-block;
+  font-size: 24px;
+  background-color: hsl(0, 100%, 64%);
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.shop-banner .wishlist-btn4 {
+  margin-top: 32px;
+  margin-left: 40px;
+  margin-right: 2px;
+  display: inline-block;
+  font-size: 24px;
+  background-color: hsl(0, 100%, 64%);
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.shop-banner .price {
+  font-weight: 720;
+  color: #ff0040;
+}
+
+.shop-banner .order-btn:hover {
+  color: #000000;
+  background-color: #ff8d8d;
+}
+
+.shop-banner .order-btn2:hover {
+  color: #000000;
+  background-color: #ff8d8d;
+}
+
+.shop-banner .order-btn3:hover {
+  color: #000000;
+  background-color: #ff8d8d;
+}
+
+.shop-banner .order-btn4:hover {
+  color: #000000;
+  background-color: #ff8d8d;
+}
+
+.shop-banner .wishlist-btn:hover {
+  color: #000000;
+  background-color: #ff8d8d;
+}
+
+.shop-banner .wishlist-btn2:hover {
+  color: #000000;
+  background-color: #ff8d8d;
+}
+
+.shop-banner .wishlist-btn3:hover {
+  color: #000000;
+  background-color: #ff8d8d;
+}
+
+.shop-banner .wishlist-btn4:hover {
+  color: #000000;
+  background-color: #ff8d8d;
+}
+
+.shop-banner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.shop-banner img {
+  width: 50%;
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+.banner-text {
+  padding: 20px;
+}
+
+.banner-text h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #2e2e2e;
+}
+
+.all-cards {
+  list-style: none;
+  width: 1300px;
+}
+
+.all-cards .jordan-card {
+  margin: 0px 0px 360px 160px;
+  height: 100px;
+}
+
+.all-cards .force-card {
+  margin-left: 160px;
+  height: 470px;
+}
+
+.all-cards #all-star {
+  margin-bottom: 200px;
+  height: 470px;
+}
+
+.all-cards .container {
+  border: .2px solid #ffffff;
+  border-radius: 32px;
+  width: 75%;
+  height: 400px;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+  margin: 0px 20px 100px 0px;
+  background: linear-gradient(#ffffff, #fdcccc);
+}
+
+.featured-shoes {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.featured-shoes h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #2e2e2e;
+}
+
+.shoes-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.shoes-list li {
+  margin: 10px;
+  border: 1px solid #ffdddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+  transition: transform 0.2s ease-in-out;
+}
+
+.shoes-list li:hover {
+  transform: scale(1.05); 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.shoes-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+.shoes-list li img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.shoes-list li p {
+  margin-top: 0px; 
+}
+
+.featured-shoes h2{
+  font-family: Poetsen One, monospace;
+  color: #ff5b5b;
+}
+
+.featured-shoes .shoes-btn {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.featured-shoes .shoes-btn:hover {
+  transform: translateY(-18px);
+}
+
+.featured-shoes .shoes-name {
+  text-align: center;
+  font-family:  Poetsen One, monospace;
+}
+
+.featured-shoes .shoes-name:hover {
+  color: #ff0000;
+}
+
+.footer {
+  background-color: #ff4343;
+  color: #fff; 
+  margin-top: 0px;
+  padding: 0%;
+  padding: 20px 0;
+  height: 120px;
+  justify-content: flex-end;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+div .sold-out {
+  width: 350px;
+  height: 300px;
+  margin-left: 430px;
+  transition: transform 0.3s ease-in-out;
+}
+
+div .sold-out-text {
+  text-align: center;
+  font-size: 20px;
+  color: #ff0000;
+}
+
+div .sold-out:hover {
+  transform: translateY(-10px) rotateZ(20deg);
+}
+
+div .text-sold {
+  font-family: Poetsen One, monospace;
+  color: #000000;
+  text-align: center;
+}
+
+@keyframes swing {
+  from { transform: rotate(-10deg); }
+  to { transform: rotate(10deg); }
+}
+
+.sold-out {
+  animation: swing 1s ease-in-out infinite alternate;
+}
+
+div .server {
+  text-align: center;
+}
+
+div .error {
+  text-align: center;
+  font-size: 20px;
+  color: #ff0000;
+}
+
+body .server-down{
+  font-family: Poetsen One, monospace;
+  color: #000000;
+  text-align: center;
+  margin-top: 150px;
+  font-size: 25px !important;
+}
+
+.nav-padding .about-title {
+  font-family: Poetsen One, monospace;
+  color: #ff0000;
+  text-align: center;
+  font-size: 25px !important;
+}
+
+nav ul .nav-btns {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav-btns:hover {
+  color: #ff0000;
+}
+
+body .nav-padding {
+  font-family: Poetsen One, monospace;
+  color: #ff0000;
+  text-align: center;
+}
+
+.nav-padding .nav-btns {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav-padding .nav-btns:hover {
+  color: #ff0000;
+}
+
+.aboutus-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  border: .2px solid #ffffff !important;
+  border-radius: 12px;
+  width: 800px !important;
+  align-items: center !important;
+  text-align: center;
+  margin: 0px 0px 100px 185px !important;
+  height: 600px !important;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  text-shadow: #a83939;
+}
+
+.aboutus-container .text-aboutus {
+  text-align: center;
+  font-size: 25px;
+  color: #2f2f2f;
+  font-family: Fredoka ,Poetsen One, monospace;
+  margin: 0px 0px 10px 0px;
+  padding-top: 0px !important;
+  text-shadow: #a83939;
+}
+
+.aboutus-body {
+  background: linear-gradient(#ffffff, #ffcfcf);
+}
+
+.aboutus-container .text-aboutus p {
+  font-family: Poetsen One, monospace;
+  color: #ff0000;
+  text-align: center;
+  font-size: 25px !important;
+}
